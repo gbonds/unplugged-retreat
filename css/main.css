@@ -240,6 +240,17 @@ footer .content-wrapper {
 
 /* ---------- Base About Styles ---------- */
 
+.mission-content p {
+  padding-top: 20px;
+}
+
+.contact-content h4 {
+  padding-top: 20px;
+}
+
+.contact-content p {
+  padding-top: 10px;
+}
 
 
 

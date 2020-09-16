@@ -122,7 +122,14 @@ footer {
 
 /* ---------- Base Typography Styles ---------- */
 
-/* TODO set margins on headers and p's to zero, it's messing up the measurements for things like the newsletter h3 */
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  /* this overrides default margins */
+}
 
 /* ---------- Base Header - Footer Styles ---------- */
 
@@ -196,8 +203,6 @@ footer .content-wrapper {
   .form {
     padding-top: 25px; 
   }
-  /* space between text lines is too big, how to correct? 
-    left TODO in Base Typography section, possibly need to just set all h# and p margins to zero*/
 
   .form {
     display: flex;

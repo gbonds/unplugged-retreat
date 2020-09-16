@@ -163,8 +163,10 @@ footer .content-wrapper {
     }
 
   .header-divider {
-    border-top: 1px solid gray;
-    width: 200%;
+    width: 100%;
+    height: 1px;
+    margin: 10px 0 20px 0;
+    background-color: grey;
     /* how to make this 100% across page if it's in wrapper that 60%? */
   }
 
@@ -193,7 +195,20 @@ footer .content-wrapper {
 
   /* --------------- Hero --------------- */
 
+  .hero-area {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+  }
+
   /* --------------- Newsletter --------------- */
+
+  aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
 
   aside .content-wrapper {
     padding: 0 0 50px 0; /* overrides 50px padding-top set by base content-wrapper */
@@ -214,6 +229,7 @@ footer .content-wrapper {
   }
 
   /* --------------- Features --------------- */
+  
   .features-items {
     display: flex;
     justify-content: center;
@@ -228,7 +244,28 @@ footer .content-wrapper {
 
   /* --------------- Reviews --------------- */
 
+  .reviews {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+  }
+
+  .reviews h2 {
+    padding-bottom: 30px;
+  }
+
+  .reviews h3 {
+    padding: 20px 0;
+  }
+
 /* ---------- Base FAQ Styles ---------- */
+
+.faq {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
 
 .faq-content {
   padding-top: 50px;
@@ -240,9 +277,23 @@ footer .content-wrapper {
 
 /* ---------- Base About Styles ---------- */
 
+.mission {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
 .mission-content p {
   padding-top: 20px;
 }
+
+/* .contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}  leaving this from Skillcrush resolution code, but it messes up the left margin */
 
 .contact-content h4 {
   padding-top: 20px;

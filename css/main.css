@@ -87,7 +87,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-   /* ---------- Base Header - Footer Styles ---------- */
+/* ---------- Base Header - Footer Styles ---------- */
 
 header,
 footer {
@@ -115,8 +115,17 @@ nav ul {
   align-items: center;
 }
 
+/* ---------- Base Homepage Styles ---------- */
 
+.form {
+  display: flex;
+  flex-flow: column;
+}
 
+.features-items {
+  text-align: center;
+  /* will this still center once icons are dropped into p? */
+}
 
 
 /* ==========================================================================

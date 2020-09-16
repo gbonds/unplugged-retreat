@@ -230,6 +230,13 @@ footer .content-wrapper {
 
 /* ---------- Base FAQ Styles ---------- */
 
+.faq-content {
+  padding-top: 50px;
+}
+
+.faq-content p {
+  padding-top: 15px;
+}
 
 /* ---------- Base About Styles ---------- */
 

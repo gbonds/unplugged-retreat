@@ -87,6 +87,43 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* REMOVE AFTER STYLING, JUST FOR VISUAL GUIDANCE PURPOSES */
+header {
+  border: 1px solid red;
+}
+
+.hero-area {
+  border: 1px dotted orange;
+}
+
+aside {
+  border: 1px solid yellow;
+}
+
+.features {
+  border: 1px dotted green;
+}
+
+.reviews {
+  border: 1px solid blue;
+}
+
+footer {
+  border: 1px dotted purple; 
+}
+
+/* ---------- Base General Styles ---------- */
+
+.content-wrapper {
+  width: 90%;
+  margin: 0 20px;
+  padding: 50px 0;
+}
+
+/* ---------- Base Typography Styles ---------- */
+
+/* TODO set margins on headers and p's to zero, it's messing up the measurements for things like the newsletter h3 */
+
 /* ---------- Base Header - Footer Styles ---------- */
 
 header,
@@ -97,35 +134,101 @@ footer {
   flex-flow: row wrap;
 }
 
-nav ul {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+header .content-wrapper,
+footer .content-wrapper {
+  width: 60%;
+  padding: 0; /* overrides 50px padding set by base content-wrapper */
 }
 
-.contact,
-.social,
-.copyright {
-  text-align: center;
-}
+  /* -------------- Header -------------- */
+  .logo-container,
+  nav ul {
+    padding: 15px 0; /* sets top and bottom padding to 15px rather than default 50px */
+  }
 
-.social-icons {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
+  header .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+    .logo-container img {
+      width: 220px;
+    }
+
+  .header-divider {
+    border-top: 1px solid gray;
+    width: 200%;
+    /* how to make this 100% across page if it's in wrapper that 60%? */
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0; /* gets rid of automatic margin set for ul */
+  }
+
+  /* -------------- Footer --------------*/
+  .contact,
+  .social,
+  .copyright {
+    text-align: center;
+    padding-top: 50px;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
 
 /* ---------- Base Homepage Styles ---------- */
 
-.form {
-  display: flex;
-  flex-flow: column;
-}
+  /* --------------- Hero --------------- */
 
-.features-items {
-  text-align: center;
-  /* will this still center once icons are dropped into p? */
-}
+  /* --------------- Newsletter --------------- */
+
+  aside .content-wrapper {
+    padding: 0 0 50px 0; /* overrides 50px padding-top set by base content-wrapper */
+  }
+
+  .form-description,
+  .form {
+    padding-top: 25px; 
+  }
+  /* space between text lines is too big, how to correct? 
+    left TODO in Base Typography section, possibly need to just set all h# and p margins to zero*/
+
+  .form {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .form input {
+    margin-top: 15px;
+  }
+
+  /* --------------- Features --------------- */
+  .features-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+  }
+    .features-items article {
+      text-align: center;
+      width: 200px;
+      padding: 25px;
+    }
+
+  /* --------------- Reviews --------------- */
+
+/* ---------- Base FAQ Styles ---------- */
+
+
+/* ---------- Base About Styles ---------- */
+
+
 
 
 /* ==========================================================================

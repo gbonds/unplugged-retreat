@@ -87,31 +87,6 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-/* REMOVE AFTER STYLING, JUST FOR VISUAL GUIDANCE PURPOSES */
-header {
-  border: 1px solid red;
-}
-
-.hero-area {
-  border: 1px dotted orange;
-}
-
-aside {
-  border: 1px solid yellow;
-}
-
-.features-section {
-  border: 1px dotted green;
-}
-
-.reviews-section {
-  border: 1px solid blue;
-}
-
-footer {
-  border: 1px dotted purple; 
-}
-
 /* ---------- Global Styles ---------- */
 
 html {
@@ -121,12 +96,15 @@ html {
 body {
  font-family: 'Open Sans', sans-serif;
  font-size: 1em;
+ background-color: #333333;
+ color: #e2e3ed;
 }
 
 h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 2em;
   line-height: 1.75em;
+  font-weight: 500;
 }
 
 h3,
@@ -134,11 +112,13 @@ h4 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.25em;
   line-height: 1.75em;
+  font-weight: 500;
 }
 
 p {
-  font-size: .75em;
+  font-size: 1em;
   line-height: 1.25em;
+  font-weight: 400;
 }
 
 a {
@@ -167,6 +147,14 @@ p {
   width: 90%;
   margin: 0 20px;
   padding: 50px 0;
+}
+
+.light-green {
+  background-color: #527158;
+}
+
+.dark-green {
+  background-color: #2A423A;
 }
 
 /* ---------- Base Header - Footer Styles ---------- */
@@ -276,6 +264,28 @@ footer .content-wrapper {
 
   .form input {
     margin-top: 15px;
+  }
+
+  input[type=text] {
+    box-sizing: border-box;
+    width: 100%;
+    color: #2a423a;
+    font-style: italic;
+    padding: 1em;
+  }
+   
+  input[type=button] {
+    width: 100%;
+    padding: 20px 0;
+    margin-top: 20px;
+    background-color: #2a423a;
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 1.125em;
+    color: #e2e3ed;
+    border: none;
+    text-align: center;
+    text-transform: uppercase;
   }
 
   /* --------------- Base Features --------------- */

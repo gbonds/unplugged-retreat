@@ -100,6 +100,16 @@ body {
  color: #e2e3ed;
 }
 
+h1,
+h2,
+h3,
+h4,
+p,
+figure {
+  margin: 0;
+  /* this overrides default margins */
+}
+
 h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 2em;
@@ -134,13 +144,8 @@ address {
   font-style: normal;
 }
 
-h1,
-h2,
-h3,
-h4,
-p {
-  margin: 0;
-  /* this overrides default margins */
+img {
+  width: 100%;
 }
 
 .content-wrapper {
@@ -326,8 +331,11 @@ footer .content-wrapper {
   .reviews-section {
     display: flex;
     justify-content: center;
+    align-items: flex-start;
     flex-flow: row wrap;
   }
+
+  /* TODO how can I get text to line up with top of image? */
 
   .reviews-section h2 {
     padding-bottom: 30px;
@@ -558,7 +566,7 @@ footer .content-wrapper {
     }
 
     .reviews-section article img {
-      padding-right: 10px;
+      
       /* TODO check this- padding is not visible yet, but I hope will work once image is in place */
     }
 

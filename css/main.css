@@ -112,15 +112,47 @@ footer {
   border: 1px dotted purple; 
 }
 
-/* ---------- Base General Styles ---------- */
+/* ---------- Global Styles ---------- */
 
-.content-wrapper {
-  width: 90%;
-  margin: 0 20px;
-  padding: 50px 0;
+html {
+  font-size: 16px;
 }
 
-/* ---------- Base Typography Styles ---------- */
+body {
+ font-family: 'Open Sans', sans-serif;
+ font-size: 1em;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2em;
+  line-height: 1.75em;
+}
+
+h3,
+h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.25em;
+  line-height: 1.75em;
+}
+
+p {
+  font-size: .75em;
+  line-height: 1.25em;
+}
+
+a {
+     color: #e2e3ed;
+     text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+address {
+  font-style: normal;
+}
 
 h1,
 h2,
@@ -129,6 +161,12 @@ h4,
 p {
   margin: 0;
   /* this overrides default margins */
+}
+
+.content-wrapper {
+  width: 90%;
+  margin: 0 20px;
+  padding: 50px 0;
 }
 
 /* ---------- Base Header - Footer Styles ---------- */
@@ -196,7 +234,6 @@ footer .content-wrapper {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border: 1px solid black;
   }
 
 /* ---------- Base Homepage Styles ---------- */

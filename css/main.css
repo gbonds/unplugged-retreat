@@ -582,11 +582,6 @@ footer .content-wrapper {
       width: 45%;
     }
 
-    .reviews-section article img {
-      
-      /* TODO check this- padding is not visible yet, but I hope will work once image is in place */
-    }
-
     .reviews-section article h3 {
       padding: 0 0 15px 0; /* resets padding from base style */
     }
@@ -617,6 +612,10 @@ footer .content-wrapper {
     .contact-content div {
       width: 45%;
     }
+
+    .map-section figure {
+      padding-bottom: 50%;
+  }
 
     .contact-content {
       padding-top: 50px;
@@ -659,6 +658,10 @@ footer .content-wrapper {
     /* ---- Desktop FAQ Page ---- */
 
     /* ---- Desktop About Page ---- */
+    .map-section figure {
+      padding-bottom: 40%;
+  }
+    
     .contact-content {
       padding-top: 30px;
     }

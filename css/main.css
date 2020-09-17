@@ -100,11 +100,11 @@ aside {
   border: 1px solid yellow;
 }
 
-.features {
+.features-section {
   border: 1px dotted green;
 }
 
-.reviews {
+.reviews-section {
   border: 1px solid blue;
 }
 
@@ -214,11 +214,16 @@ footer .content-wrapper {
   aside {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-flow: row wrap;
   }
 
   aside .content-wrapper {
+    isplay: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    /* TODO fix alignment, the headers for each section aren't lining up*/
     padding: 0 0 50px 0; /* overrides 50px padding-top set by base content-wrapper */
   }
 
@@ -238,7 +243,7 @@ footer .content-wrapper {
 
   /* --------------- Base Features --------------- */
   
-  .features {
+  .features-section {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -258,17 +263,17 @@ footer .content-wrapper {
 
   /* --------------- Base Reviews --------------- */
 
-  .reviews {
+  .reviews-section {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
   }
 
-  .reviews h2 {
+  .reviews-section h2 {
     padding-bottom: 30px;
   }
 
-  .reviews h3 {
+  .reviews-section h3 {
     padding: 20px 0;
   }
 
@@ -409,6 +414,7 @@ footer .content-wrapper {
       margin: 0 60px;
       padding: 100px 0;
     }
+
     /* ----- Tablet Header & Footer ---- */
     
     header .content-wrapper,
@@ -451,20 +457,13 @@ footer .content-wrapper {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      padding-top: 45px;
     }
 
     .form-description,
     .form {
-      width: 50%;
-      padding-top: 50px; /* don't need to set padding-bottom, it's inherited from content-wrapper */
-    }
-
-    .form-description {
-      padding-right: 45px;
-    }
-
-    .form {
-      padding-left: 45px;
+      width: 45%;
+      padding-top: 0px;  /* resets padding set for mobile */
     }
     
     /* ---------- Tablet Features ---------- */
@@ -472,33 +471,32 @@ footer .content-wrapper {
     .features-items {
       display: flex;
       justify-content: center;
+      align-items: flex-start;
       flex-flow: row wrap;
     }
 
-    /* TODO how can I get the wifi feature lined with rest of items? height is shorter */
-
     /* ---------- Tablet Reviews ---------- */
 
-    .reviews h2 {
+    .reviews-section h2 {
       padding-bottom:20px; 
     }
 
-    .reviews article {
+    .reviews-section article {
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
 
-    .reviews article div {
-      width: 50%;
+    .reviews-section article div {
+      width: 45%;
     }
 
-    .reviews article img {
+    .reviews-section article img {
       padding-right: 10px;
       /* TODO check this- padding is not visible yet, but I hope will work once image is in place */
     }
 
-    .reviews article h3 {
+    .reviews-section article h3 {
       padding: 0 0 15px 0; /* resets padding from base style */
     }
 
@@ -533,11 +531,34 @@ footer .content-wrapper {
       padding-top: 50px;
     }
 
-
     } /* tablet media query ends */
      
     @media only screen and (min-width: 1200px) {
     /*Desktop styles here*/
+    .content-wrapper {
+      max-width: 950px;
+      margin: 0 115px;
+      padding: 100px 0;
+      background-color: powderblue;
+    }
+
+    /* ---- Desktop Homepage ---- */
+
+    .hero-area .content-wrapper {
+      padding-top: 50px;
+    }
+
+    aside .content-wrapper {
+      padding: 45px 200px;
+    }
+
+    .features-section h2,
+    .reviews-section h2 {
+      padding-bottom: 100px;
+    }
+
+
+
     } /* desktop media query ends */
 
 /* ==========================================================================

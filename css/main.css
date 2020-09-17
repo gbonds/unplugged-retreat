@@ -162,13 +162,14 @@ footer .content-wrapper {
       width: 220px;
     }
 
+  /*  removing this for now until I have tablet and desktop set up, since they don't have divider.
+    how to make this go across the entire page, rather than just matching 60% width?
   .header-divider {
     width: 100%;
     height: 1px;
     margin: 10px 0 20px 0;
     background-color: grey;
-    /* how to make this 100% across page if it's in wrapper that 60%? */
-  }
+  } */
 
   nav ul {
     display: flex;
@@ -181,19 +182,26 @@ footer .content-wrapper {
   .contact,
   .social,
   .copyright {
-    text-align: center;
     padding-top: 50px;
+    text-align: center;
   }
+
+  /* should I set width here? it messes with centering.
+  .contact,
+  .social {
+    width: 50%; 
+    } */
 
   .social-icons {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    border: 1px solid black;
   }
 
 /* ---------- Base Homepage Styles ---------- */
 
-  /* --------------- Hero --------------- */
+  /* --------------- Base Hero --------------- */
 
   .hero-area {
     display: flex;
@@ -201,7 +209,7 @@ footer .content-wrapper {
     flex-flow: row wrap;
   }
 
-  /* --------------- Newsletter --------------- */
+  /* --------------- Base Newsletter --------------- */
 
   aside {
     display: flex;
@@ -228,8 +236,14 @@ footer .content-wrapper {
     margin-top: 15px;
   }
 
-  /* --------------- Features --------------- */
+  /* --------------- Base Features --------------- */
   
+  .features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .features-items {
     display: flex;
     justify-content: center;
@@ -242,7 +256,7 @@ footer .content-wrapper {
       padding: 25px;
     }
 
-  /* --------------- Reviews --------------- */
+  /* --------------- Base Reviews --------------- */
 
   .reviews {
     display: flex;
@@ -393,16 +407,109 @@ footer .content-wrapper {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
+   @media only screen and (min-width: 768px) {
+    /*Tablet styles here*/
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
+    .content-wrapper {
+      max-width: 640px;
+      margin: 0 60px;
+      padding: 100px 0;
+    }
+    /* ----- Tablet Header & Footer ---- */
+    
+    header .content-wrapper,
+    footer .content-wrapper {
+      width: 100%;
+    }
+
+    header .content-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header nav {
+      width: 20%;
+    }
+
+    header nav ul {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    /* TODO fix social icons, why do they crowd together in tablet mode? */
+
+    /* ---- Tablet Homepage ---- */
+
+    /* ---------- Tablet Newsletter ---------- */
+
+    aside .content-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .form-description,
+    .form {
+      width: 50%;
+      padding-top: 50px; /* don't need to set padding-bottom, it's inherited from content-wrapper */
+    }
+
+    .form-description {
+      padding-right: 45px;
+    }
+
+    .form {
+      padding-left: 45px;
+    }
+    
+    /* ---------- Tablet Features ---------- */
+
+    .features-items {
+      display: flex;
+      justify-content: center;
+      flex-flow: row wrap;
+    }
+
+    /* TODO how can I get the wifi feature lined with rest of items? height is shorter */
+
+    /* ---------- Tablet Reviews ---------- */
+
+    .reviews h2 {
+      padding-bottom:20px; 
+    }
+
+    .reviews article {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .reviews article div {
+      width: 50%;
+    }
+
+    .reviews article img {
+      padding-right: 10px;
+      /* TODO check this- padding is not visible yet, but I hope will work once image is in place */
+    }
+
+    .reviews article h3 {
+      padding: 0 0 15px 0; /* resets padding from base style */
+    }
+    
+
+    } /* tablet media query ends */
+     
+    @media only screen and (min-width: 1200px) {
+    /*Desktop styles here*/
+    } /* desktop media query ends */
 
 /* ==========================================================================
    Print styles.

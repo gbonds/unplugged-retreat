@@ -557,6 +557,12 @@ footer .content-wrapper {
       padding-bottom: 100px;
     }
 
+    /* ---- Desktop FAQ Page ---- */
+
+    /* ---- Desktop About Page ---- */
+    .contact-content {
+      padding-top: 30px;
+    }
 
 
     } /* desktop media query ends */

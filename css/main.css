@@ -274,24 +274,25 @@ footer .content-wrapper {
 
 /* ---------- Base FAQ Styles ---------- */
 
-.faq {
+.faq-section {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
 
-.faq-content {
+.faq-item {
   padding-top: 50px;
 }
 
-.faq-content p {
+.faq-item p {
   padding-top: 15px;
 }
 
 /* ---------- Base About Styles ---------- */
 
-.mission {
+.mission-section,
+.contact-section {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -301,13 +302,6 @@ footer .content-wrapper {
 .mission-content p {
   padding-top: 20px;
 }
-
-/* .contact-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}  leaving this from Skillcrush resolution code, but it messes up the left margin */
 
 .contact-content h4 {
   padding-top: 20px;
@@ -443,7 +437,11 @@ footer .content-wrapper {
       align-items: center;
     }
 
-    /* TODO fix social icons, why do they crowd together in tablet mode? */
+    .contact,
+    .social {
+      width: 45%; /* setting this enables the social icons to spread out evenly, 
+      otherwise will crowd together in tablet mode */
+    }
 
     /* ---- Tablet Homepage ---- */
 
@@ -503,7 +501,38 @@ footer .content-wrapper {
     .reviews article h3 {
       padding: 0 0 15px 0; /* resets padding from base style */
     }
+
+    /* ---------- Tablet FAQ Page ---------- */
+
+    .faq-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-flow: row wrap;
+    }
+
+    .faq-item {
+      width: 45%;
+    }
     
+    /* ---------- Tablet About Page ---------- */
+
+    .mission-content,
+    .contact-content {
+      display: flex;
+      justify-content: space-between;
+      flex-flow: row wrap;
+    }
+
+    .mission-content p,
+    .contact-content div {
+      width: 45%;
+    }
+
+    .contact-content {
+      padding-top: 50px;
+    }
+
 
     } /* tablet media query ends */
      

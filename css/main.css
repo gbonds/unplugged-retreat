@@ -230,6 +230,13 @@ footer .content-wrapper {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding-top: 20px;
+  }
+
+  .social-icons i {
+    font-size: 1.25em;
+    padding: 15px;
+    border-radius: 50%;
   }
 
 /* ---------- Base Homepage Styles ---------- */

@@ -208,6 +208,7 @@ footer .content-wrapper {
     align-items: center;
     margin: 0; /* gets rid of automatic margin set for ul */
     text-transform: uppercase;
+    font-size: 1.125em;
     font-weight: 700;
   }
 
@@ -325,6 +326,11 @@ footer .content-wrapper {
       text-align: center;
       width: 200px;
       padding: 25px;
+    }
+
+    .features-section i {
+      font-size: 3.75em;
+      margin-bottom: 40px;
     }
 
   /* --------------- Base Reviews --------------- */

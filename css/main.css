@@ -329,7 +329,7 @@ footer {
   }
 
   .features-section h2 {
-    margin-bottom: 60px;
+    padding-bottom: 60px;
   }
 
   .features-items {
@@ -375,8 +375,17 @@ footer {
   flex-flow: row wrap;
 }
 
+.faq-section h2 {
+  padding-bottom: 40px;
+  line-height: 1;
+}
+
 .faq-item {
-  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.faq-item h4 {
+  line-height: 1.333;
 }
 
 .faq-item p {
@@ -521,6 +530,16 @@ footer {
       padding: 100px 0;
     }
 
+    h2 {
+      font-size: 2.25em;
+      line-height: 1.333;
+    }
+
+    h3 {
+      font-size: 1.5em;
+      line-height: 1.25;
+    }
+
     /* ----- Tablet Header & Footer ---- */
     
     header .content-wrapper,
@@ -547,6 +566,12 @@ footer {
       display: flex;
       justify-content: space-around;
       align-items: flex-start;
+      padding-top: 50px;
+    }
+
+    footer h4 {
+      font-size: 1.5em;
+      margin-bottom: 30px;
     }
 
     .contact,
@@ -571,7 +596,7 @@ footer {
 
     aside .content-wrapper {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       align-items: flex-start;
       padding-top: 45px;
     }
@@ -583,6 +608,10 @@ footer {
     }
     
     /* ---------- Tablet Features ---------- */
+
+    .features-section h2 {
+      padding-bottom: 20px;
+    }
 
     .features-items {
       display: flex;
@@ -609,7 +638,7 @@ footer {
     }
 
     .reviews-section article div {
-      width: 45%;
+      width: 48%;
     }
 
     .reviews-section article h3 {
@@ -627,6 +656,12 @@ footer {
 
     .faq-item {
       width: 45%;
+    }
+
+    .faq-item h4,
+    .faq-item p {
+      font-size: .875em;
+      line-height: 1.125;
     }
     
     /* ---------- Tablet About Page ---------- */
@@ -665,6 +700,10 @@ footer {
       width: 280px;
     }
 
+    h3, h4 {
+      font-size: 1.875em;
+    }
+
     /* ---- Desktop Homepage ---- */
 
     .hero-area .content-wrapper {
@@ -680,6 +719,11 @@ footer {
       padding: 45px 200px;
     }
 
+    .form, 
+    .form-description {
+      width: 30%;
+    }
+
     .features-section h2,
     .reviews-section h2 {
       padding-bottom: 100px;
@@ -690,6 +734,12 @@ footer {
     }
 
     /* ---- Desktop FAQ Page ---- */
+
+    .faq-item h4,
+    .faq-item p {
+      font-size: 1.125em;
+      line-height: 1;
+    }
 
     /* ---- Desktop About Page ---- */
     h2 {
